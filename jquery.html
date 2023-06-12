@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Intro</title>
+	<style type="text/css">
+		.box{
+			widows: 100px;
+			height: 500px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+
+	<h1 id="ready1" class="learn1">I am ready to learn JQuery.....</h1>
+	<h2 id="ready2" class="learn2">I am ready to learn JQuery.....</h2>
+	<h3 id="ready3" class="learn3">I am ready to learn JQuery.....</h3>
+	<h4 id="ready4" class="learn4">I am ready to learn JQuery.....</h4>
+	<h5 id="ready5" class="learn5">I am ready to learn JQuery.....</h5>
+
+	<div id="box1" class="box">
+		Box1
+	</div>
+	<div id="box2" class="box">
+		Box2
+	</div>
+	<div id="box3" class="box">
+		Box3
+	</div>
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js" type="text/javascript"></script>
+	<script type="text/javascript">
+
+		console.log('hello mello');  //js code
+
+
+		//jquery code
+		$(document).ready(function(){
+			console.log("I am Jquery.");
+			console.error("I am error");
+			console.warn("I am warning");
+
+			//window.alert("I am Alert");
+
+			// $('#ready');
+			// $('.learn');
+			// $('h1');
+
+			$('#ready1').fadeToggle(2000);
+			$('#ready2').fadeToggle(2000);
+			$('#ready3').fadeToggle(2000);
+			$('#ready4').fadeToggle(2000);
+			$('#ready5').fadeToggle(2000);
+
+
+			$('#box1').hide(1000);
+			$('#box1').show();
+		});
+	</script>
+
+
+</body>
+</html>
